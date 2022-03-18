@@ -83,3 +83,12 @@ service.interceptors.response.use(
 )
 
 export default service
+
+import request from '../utils/request';
+export function fetchList(query) {
+  return request({
+    url: '/login2/list',
+    method: 'get',
+    params: query
+  })
+}
